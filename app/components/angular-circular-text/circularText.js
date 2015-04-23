@@ -2,6 +2,21 @@ angular.module('circularText', ['ngLettering'])
 .controller('testCtrl', ['$scope', function ($scope) {
 	$scope.testInput;
 }])
+.filter('lettering', function($sce) {
+  return function(input) {
+  	if (typeof input !== 'undefined'){
+  		var lettering = '';
+  		var letters = input.split('');
+  		if( letters.length ){
+  			angular.forEach( letters, function( item, i ) {
+				lettering += '<span class="char' + (i + 1) + '">' + item + '</span>';
+			});
+  		}
+  		return $sce.trustAsHtml(lettering);
+  	}
+  	else return "";
+  };
+})
 .filter('replaceWhitespace', function() {
   return function(input) {
   	if (typeof input !== 'undefined'){
