@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Title of the document</title>
+		<script src="/bower_components/angular/angular.js"></script>
+		<script src="/app/components/ng-lettering/ng-lettering.js"></script>
+	  	<script src="/app/components/angular-circular-text/circularText.js"></script>
+	</head>
+
+	<body ng-app="circularText">
+		<div  ng-controller="testCtrl">
+			<input ng-model='testInput'>
+			<circular-text ng-model='testInput'></circular-text>
+		</div>
+	</body>
+
+</html>

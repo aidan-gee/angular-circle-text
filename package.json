@@ -1,0 +1,28 @@
+{
+  "name": "angular-circle-text",
+  "version": "0.0.1",
+  "description": "angular directive for circular text",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aidan-gee/angular-circle-text.git"
+  },
+  "keywords": [
+    "angular",
+    "circular"
+  ],
+  "author": "Aidan Gee aidangeewd@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aidan-gee/angular-circle-text/issues"
+  },
+  "homepage": "https://github.com/aidan-gee/angular-circle-text",
+  "devDependencies": {
+    "browser-sync": "^2.6.4",
+    "gulp": "^3.8.11",
+    "require-dir": "^0.3.0"
+  }
+}
