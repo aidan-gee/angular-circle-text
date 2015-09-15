@@ -3,12 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Title of the document</title>
+		<script src="/bower_components/jquery/dist/jquery.js"></script>
+		<script src="/bower_components/arctext-js/js/jquery.arctext.js"></script>
 		<script src="/bower_components/angular/angular.js"></script>
-		<script src="/app/components/ng-lettering/ng-lettering.js"></script>
 	  	<script src="/app/components/angular-circular-text/circularText.js"></script>
+	  	<script src="/app/test/testController.js"></script>
+
 	</head>
 
-	<body ng-app="circularText">
+	<body ng-app="testApp">
 		<div  ng-controller="testCtrl">
 			<input ng-model='testInput'>
 			<circular-text ng-model='testInput'></circular-text>
